@@ -7,3 +7,6 @@ def home(request):
 
 def myfunction(request):
     return HttpResponse('Hello Django')
+
+def django_index(req):
+    return render(req, 'app1/django.html')
