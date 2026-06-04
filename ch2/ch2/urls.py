@@ -1,5 +1,5 @@
 """
-URL configuration for ch6 project.
+URL configuration for ch2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -16,11 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1 import views as v1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('myfunc1/', v1.myfunc1),
-    path('myfunc2/', v1.myfunc2),
-    path('', v1.home, kwargs={'status': 'Welcome to the Home Page'}),
 ]
