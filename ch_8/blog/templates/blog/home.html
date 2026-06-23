@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Basic</title>
+</head>
+<body>
+    <h1>Template Basic</h1>
+    
+    <p>Name: {{ name }}</p>
+    <p>Age: {{ age }}</p>
+    <p>Default Empty Value : {{ empty_value | default:"No value provided" }}</p>
+    <p>Default Empty Value : {{ empty_value | default_if_none:"No data available" }}</p>
+</body>
+</html>
